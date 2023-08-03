@@ -1,0 +1,72 @@
+<suite name="JsonplaceholderAPITest" verbose="1">
+
+    <test name="Test post 99">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.JsonplaceholderAPITest">
+                <methods>
+                    <parameter name="id" value="99" />
+                        <include name = "getRequestGetOnePost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test get user5">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.JsonplaceholderAPITest">
+                <methods>
+                    <parameter name="id" value="5" />
+                    <include name = "getRequestGetOneUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test post request">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.JsonplaceholderAPITest">
+                <methods>
+                    <parameter name="userId" value="1" />
+                    <parameter name="maxTextLength" value="30" />
+                        <include name = "getRequestPost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test get no one post">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.JsonplaceholderAPITest">
+                <methods>
+                    <parameter name="id" value="150" />
+                    <include name = "getRequestGetThereIsNoSuchPost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test get all posts">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.JsonplaceholderAPITest">
+                <methods>
+                    <include name = "getRequestGetAllPosts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test get all users">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.JsonplaceholderAPITest">
+                <methods>
+                    <include name = "getRequestGetAllUsers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test mysql">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.MySQLTest">
+                <methods>
+                    <include name = "workWithEntityInMySQL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
