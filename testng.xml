@@ -1,0 +1,13 @@
+<suite name="VKTest" verbose="1">
+    <test name="Test post on the wall">
+        <classes>
+            <class name = "by.a1qa.poznyak.tests.VKTest">
+                <methods>
+                    <parameter name="photoNameToDownload" value="/src/main/resources/avatar.png" />
+                    <parameter name="maximumLengthOfText" value="50" />
+                    <include name = "testVkWallPost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
